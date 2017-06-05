@@ -8,7 +8,7 @@ This example project shows how to setup a [Spring Boot](https://projects.spring.
 - Backend and frontend in one project
 - Single toolchain over maven
 - Hot-deployments of backend and frontend during development
-- Use angular-cli for achieving best-practices 
+- Use [angular-cli](https://github.com/angular/angular-cli) for achieving best-practices 
 
 
 ## Prerequisites
@@ -16,7 +16,7 @@ This example project shows how to setup a [Spring Boot](https://projects.spring.
 - JDK 8
 - Maven 
 - Node with NPM
--- [angular-cli](https://github.com/angular/angular-cli)
+  - [angular-cli](https://github.com/angular/angular-cli)
 
 
 ## Usage
@@ -31,11 +31,11 @@ This example project shows how to setup a [Spring Boot](https://projects.spring.
 
 - Setup your preferred maven project layout. I used a multi-module project, having the spring app and the angular ui as modules.
 - Setup a basic [Spring Boot](https://projects.spring.io/spring-boot/) app.
--- Add maven dependency for org.springframework.boot:spring-boot-devtools for hot-deployments
+  - Add maven dependency for org.springframework.boot:spring-boot-devtools for hot-deployments
 - Setup UI module
--- Run angular-cli to create a new UI project stub (ng new <name>) and copy the created files to the maven ui module
--- Create folder /src/ngapp and move all files below /src which where created by angular-cli to there
--- Fix paths in ./angular-cli.json, ./tsconfig.json, ./src/ngapp/tsconfig.*.json. Change /src to /src/ngapp and /dist to /target/classes/public
--- Update maven pom and include /src/ngapp as source-folder and configure [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin)
+  - Run angular-cli to create a new UI project stub (ng new <name>) and copy the created files to the maven ui module
+  - Create folder /src/ngapp and move all files below /src which where created by angular-cli to there
+  - Fix paths in ./angular-cli.json, ./tsconfig.json, ./src/ngapp/tsconfig.*.json. Change /src to /src/ngapp and /dist to /target/classes/public
+  - Update maven pom and include /src/ngapp as source-folder and configure [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin)
 - Add the angular-ui jar as dependency to the spring-boot-app module
 
