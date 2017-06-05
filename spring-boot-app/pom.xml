@@ -10,6 +10,11 @@
 
    <dependencies>
       <dependency>
+         <groupId>com.example</groupId>
+         <artifactId>angular-ui</artifactId>
+      </dependency>
+
+      <dependency>
          <groupId>org.springframework.boot</groupId>
          <artifactId>spring-boot-starter</artifactId>
       </dependency>
