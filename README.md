@@ -33,9 +33,9 @@ This example project shows how to setup a [Spring Boot](https://projects.spring.
 - Setup a basic [Spring Boot](https://projects.spring.io/spring-boot/) app.
   - Add maven dependency for org.springframework.boot:spring-boot-devtools for hot-deployments
 - Setup UI module
-  - Run angular-cli to create a new UI project stub (ng new <name>) and copy the created files to the maven ui module
+  - Run [angular-cli](https://github.com/angular/angular-cli) to create a new UI project stub (ng new <name>) and copy the created files to the maven ui module
   - Create folder /src/ngapp and move all files below /src which where created by angular-cli to there
-  - Fix paths in ./angular-cli.json, ./tsconfig.json, ./src/ngapp/tsconfig.*.json. Change /src to /src/ngapp and /dist to /target/classes/public
+  - Fix paths in ./angular-cli.json, ./tsconfig.json, ./src/ngapp/tsconfig.*.json. Change /src to /src/ngapp and /dist to /target/classes/public. By default, [Spring Boot](https://projects.spring.io/spring-boot/) makes the web-resources in the /public folder accessible.
   - Update maven pom and include /src/ngapp as source-folder and configure [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin)
 - Add the angular-ui jar as dependency to the spring-boot-app module
 
