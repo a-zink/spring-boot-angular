@@ -1,2 +1,2 @@
 # spring-boot-angular
-Spring Boot Application with Angular and Maven build
+This example project shows how to setup a [Spring Boot](https://projects.spring.io/spring-boot/) application with [Angular](https://angular.io/) >= v2 using a [Maven](https://maven.apache.org/) build.
